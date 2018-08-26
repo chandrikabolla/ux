@@ -9,6 +9,7 @@
     <meta name="author" content="">
 
     <title>Chandrika Bolla</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <link rel="shortcut icon" href="img/darkandlight.ico" /> 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +24,32 @@
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/zoom.css" rel="stylesheet">
+<script src="js/zoom.js"></script>
+<script src="js/transition.js"></script>
+<style>
+a #dashed{
+  border-bottom: 1px dashed #ffa500;
+  color: #a66c00;
+  display: inline-block;
+  line-height: 100%;
+  text-decoration: none;
+
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+a #dashed:hover {
+  border-bottom-color: #a66c00;
+  color: #ffa500;
+}
+
+.dotted {
+  border-bottom-style: dotted;
+}
+</style>
 
   </head>
 
@@ -31,7 +58,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger text-lowercase" href="#page-top"> &lt; chandrika /&gt;</a>
+        <a class="navbar-brand js-scroll-trigger text-lowercase" href="#page-top"> <img src="img/chandrikalogocopy.png" class="img-responsive"/></a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -40,6 +67,9 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3  js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3  js-scroll-trigger" href="#designprocess">Design Process</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3  js-scroll-trigger" href="#about">About</a>
@@ -53,12 +83,26 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead bg-primary text-white text-center">
-      <div class="container">
-        <img class="img-fluid mb-5 d-block mx-auto" src="img/profilepic-resized.png" alt="">
-        <h1 class="text-uppercase mb-0">Chandrika Bolla</h1>
-        <hr class="star-light mb-5">
-        <h2 class="font-weight-light mb-0">Grad Student | Web Developer | User Experience Designer &amp; Researcher </h2>
+    <header class="masthead bg-primary text-white ">
+      <div class="container col-md-8">
+        <div class="row">
+          <div class="col-md-6">
+        <img class="img-fluid mb-5 d-block" src="img/image-previousicon.png" alt="">
+        <h2 class="text-uppercase mb-0">Chandrika Bolla</h2>
+        <!--  <hr class="star-light mb-5">-->
+       
+      </div>
+      <div class="col-md-6">
+        <p>Hello There!! </p>
+        <p> My name is Chandrika (<i class="fa fa-moon-o" aria-hidden="true"></i> moon/moonlight)  </p>
+        <p> I am a recent graduate from Northeastern University with a master’s degree in Information Systems. I have a bachelor degree in Computer Science and Engineering. I’m a programmer turned user experience researcher after taking UX courses during my Master’s.</p>
+        <p> I balance my empathy and pragmatism by being an ambassador of users of my product and supporting business objectives as well. </p>
+
+<p>I am currently looking for full-time opportunities as an entry-level user experience designer/researcher. </p>
+<p>Feel free to checkout <a class="js-scroll-trigger" href="#portfolio" style="color:#212529" id="dashed"> my portfolio.</a> Connect with me on <a href="https://www.linkedin.com/in/chandrika-bolla999/" style="color:#212529" target="_blank">LinkedIn </a>or contact me at <a href="mailto:chandrikabolla999@gmail.com" style="color:#212529">chandrikabolla999@gmail.com.</a></p><br/>
+
+      </div>
+    </div>
       </div>
     </header>
 
@@ -67,6 +111,76 @@
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
         <hr class="star-dark mb-5">
+        
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-ux1">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/indeedweb.JPG" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-ux2">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/indeedmobile.JPG" alt="">
+            </a>
+          </div>
+         <!-- <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-ux3">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/petapp.JPG" alt="">
+            </a>
+          </div>-->
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-ux4">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/fst.JPG" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-ux5">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/vite.JPG" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-ux6">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/cavasbg.JPG" alt="">
+            </a>
+          </div>
+        </div>
+        <br><br>
+        <!--
+        <h3 class="text-left text-secondary mb-0">Programming Projects</h3>
+        <br>
         <div class="row">
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
@@ -98,6 +212,8 @@
               <img class="img-fluid" src="img/portfolio/huskysupplies.JPG" alt="">
             </a>
           </div>
+        </div>
+        <div class="row">
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -130,31 +246,18 @@
           </div>
           
         </div>
-          <p><i> My three new projects on User Experience, Business Analytics and AWS will be updated soon.</i></p>
+          <p><i> My three new projects on User Experience, Business Analytics and AWS will be updated soon.</i></p>-->
       </div>
     </section>
 
     <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="about">
+    <section class="bg-primary text-white mb-0" id="designprocess">
       <div class="container">
-        <h2 class="text-center text-uppercase text-white">About</h2>
+        <h2 class="text-center text-uppercase text-white">Design Process</h2>
         <hr class="star-light mb-5">
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead">To tell you a little more about myself, 
-<i>What am I?</i><br/>
-I am a graduate student in Information Systems at Northeastern University, Boston, with a Bachelors degree in Computer Science &amp; Engineering. I am passionate about Sofwtare Development, UX Design &amp; Research. <br/>
-<i>What I do?</i><br/>
-I'm currently in my last semester, working on 2 projects to build my skills in the areas of Business Analysis, Cloud Computing. I'm also working with a Social Media Management team (team of 5) for Intelli Bookkeeping as Twitter Manager since this January (2018). 
-</p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead"><i>Why I do it?</i><br/>
-I fell in love with the Software industry, while I was doing my internship as a Software Engineer Intern during my undergrad career. The quick and simple way, the software applications solve the business and consumer problems, boosted my passion to right great code that crack such problems. </p>
-          </div>
-        </div>
+        <img class="img-fluid img-responsive" src="img/portfolio/designprocess.PNG"/>
         <div class="text-center mt-4">
-          <a class="btn btn-xl btn-outline-light" href="#">
+          <a class="btn btn-xl btn-outline-light" href="img/portfolio/chandrika_bolla_ux_resume.pdf" target="_blank">
             <i class="fa fa-download mr-2"></i>
             My Resume
           </a>
@@ -163,15 +266,106 @@ I fell in love with the Software industry, while I was doing my internship as a 
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="about">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+        <h2 class="text-center text-uppercase text-secondary mb-0">About</h2>
         <hr class="star-dark mb-5">
+        <!--<div class="row">
+          <b>Skills</b>
+          <div class="col-md-4">
+        <p> <b>Protyping Software</b>
+          <ul>
+            <li>Sketch</li>
+            <li>Axure RP</li>
+            <li>Invision</li>
+            <li>Balsamiq</li>
+            <li>Proto.io</li>
+            <li>UXPin</li>
+            <li>WebFlow</li>
+          </ul>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p><b>UX Research Methods</b>
+          <ul>
+            <li>User research Interviews</li>
+            <li>User Personas</li>
+            <li>Competitor Analysis</li>
+            <li>User Surveys</li>
+            <li>Focus groups</li>
+            <li>Information Architecture Design</li>
+            <li>Card Sorting</li>
+            <li>Interaction Design</li>
+            <li>Storyboarding </li>
+            <li>User flows </li>
+            <li>Usability Testing (In-person &amp; Remote)
+            </li>
+          </ul>
+        </p>
+      </div>
+      </div>-->
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-fluid" src="img/portfolio/aboutchandrika.jpg" />
+        <p><br/>
+          I live in Boston, and I call it my hometown overseas. But I am willing to relocate to any city on hire .</p>
+          <!--<p>As a UX designer &amp; researcher, my special sauce includes a rare set of skills like problem-spotting, problem-solving, user research, user testing, web designing, software development in Java,. I call it a special sauce and rare because most of the UX researchers come from a non-developer background. I believe that knowing the complete software development cycle would be a plus for my career as a UX designer/researcher because I can empathize with designers, developers, business analysts and can communicate in their language.</p>-->
+          <p>Things I like to do other than UX research: coding, cooking, reading about food and culture, drawing and painting. Well, I recently made a new addition to this list. I started learning a new language, Hangul!!</p>
+          <p>Something many people don’t know about me: I’m a geography geek. Ask me!! I can plot and give you insights about any of the UN countries on the map.</p>
+          <p>Read <a class="portfolio-item" href="#personamodal" data-toggle="modal" data-target="#personaModal"> My Persona</a> to know more about me.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">I design using</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Research Methods I use</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="books-tab" data-toggle="tab" href="#books" role="tab" aria-controls="books" aria-selected="false">Books I read</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <br/>
+            <ul>
+            <li>Sketch</li>
+            <li>Axure RP</li>
+            <li>Invision</li>
+            <li>Balsamiq</li>
+            <li>Proto.io</li>
+            <li>UXPin</li>
+            <li>WebFlow</li>
+            <li>HTML, CSS, JavaScript</li>
+          </ul>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><br/> <ul>
+            <li>User research Interviews</li>
+            <li>User Personas</li>
+            <li>Competitor Analysis</li>
+            <li>User Surveys</li>
+            <li>Focus groups</li>
+            <li>Information Architecture Design</li>
+            <li>Card Sorting</li>
+            <li>Interaction Design</li>
+            <li>Storyboarding </li>
+            <li>User flows </li>
+            <li>Usability Testing (In-person &amp; Remote)
+            </li>
+          </ul></div>
+  <div class="tab-pane fade" id="books" role="tabpanel" aria-labelledby="books-tab"><p></p>
+          <img class="img-fluid" src="img/portfolio/booksireadcroppedsm.jpg"/></div>
+</div>
+          
+        </div>
+      </div>
+        <!--
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-8 mx-auto">-->
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
             <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+          <!--  <form name="sentMessage" id="contactForm" novalidate="novalidate" action="https://formspree.io/chandrikabolla999@gmail.com" method="POST">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Name</label>
@@ -208,12 +402,13 @@ I fell in love with the Software industry, while I was doing my internship as a 
             </form>
           </div>
         </div>
+      -->
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer text-center">
-      <div class="container">
+      <div class="container" id="contact">
         <p><i>Thank you for coming so far!</i></p>
         <div class="row">
           <div class="col-md-4 mb-5 mb-lg-0">
@@ -222,39 +417,41 @@ I fell in love with the Software industry, while I was doing my internship as a 
               <br>Boston, MA 02115</p>
           </div>
           <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">connect with me</h4>
+            <h4 class="text-uppercase mb-4">connect with me on</h4>
             <ul class="list-inline mb-0">
-              <li class="list-inline-item">
+             <!-- <li class="list-inline-item">
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/chandrikabolla999">
                   <i class="fa fa-fw fa-facebook"></i>
                 </a>
-              </li>
+              </li>-->
               <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/chandrikabolla">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/chandrikabolla" target="_blank">
                   <i class="fa fa-fw fa-github"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
+             <!-- <li class="list-inline-item">
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/ChandrikaBolla">
                   <i class="fa fa-fw fa-twitter"></i>
                 </a>
-              </li>
+              </li>-->
               <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/chandrika-bolla999/">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/chandrika-bolla999/" target="_blank">
                   <i class="fa fa-fw fa-linkedin"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
+             <!-- <li class="list-inline-item">
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/bolla_in_boston/">
                   <i class="fa fa-fw fa-instagram"></i>
                 </a>
-              </li>
+              </li>-->
             </ul>
           </div>
           <div class="col-md-4">
             <h4 class="text-uppercase mb-4">Email Address</h4>
             <p class="lead mb-0">I can be best reached at
-              <a href="mailto:bolla.c@husky.neu.edu">bolla.c@husky.neu.edu</a>.</p>
+              <a href="mailto://chandrikabolla999@gmail.com" id="myemailid">chandrikabolla999@gmail.com </a>
+             <!-- <span style="visibility: hidden" id="feedbackclip"><i><small>email copied</small></i></span>-->
+            </p>
           </div>
         </div>
       </div>
@@ -264,6 +461,7 @@ I fell in love with the Software industry, while I was doing my internship as a 
       <div class="container">
         <small>Copyright &copy; bollachandrika.me 2018</small>
       </div>
+      <input type="hidden" id="myemail" value="chandrikabolla999@gmail.com"/>
     </div>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -274,6 +472,790 @@ I fell in love with the Software industry, while I was doing my internship as a 
     </div>
 
     <!-- Portfolio Modals -->
+
+    <!-- Persona Modal-->
+    <div class="portfolio-modal mfp-hide" id="personamodal">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center col-lg-8">
+            <h3 class="text-secondary text-uppercase mb-0">Chandrika's Persona</h3>
+            <p><i>Well, This one is real unlike the ones in my UX projects</i></p>
+            <p><br/>
+            Chandrika has always loved working with people. During her High School, she was good at Math, Social Sciences. She was elected as Student President of almost 800 students. She was able to build trust, encourage other students to speak about their problems, solve them collaboratively and then she was elected for the second time in a row. She also hosted a radio show promoting a nationwide educational organization. </p>
+            <p>When she had to join the college, she challenged herself into computer science which she was not so good at till then. She worked at a startup for almost a year as a software intern when she was sophomore in college. One year before graduating from college, she had a software job in her hand but was unsure if it was the right career for her. She applied and got admitted into Information Systems at Northeastern university. She studied various design and development courses. When she started into user experience design &amp; research course, she felt that UX was the type of career she wanted. </p>
+            <p>After graduating with master’s degree, she started applying and interviewing for development jobs like most of her classmates did. One company she interviewed with asked her to write about her, what and how she wants to achieve her future career goals. After writing a whole page about her UX goals, she realized that she should start and continue her career as UX Designer/Researcher. She networked with UXers, started reading books on UX and working on UX projects. When she called in her classmates and friends for user research interviews, many of them told her that she was being crazy because she chose “non-coding career” while she was good at coding. But she beieves that it was her problem-spotting and problem-solving skills that made her good at coding. She developed interest on Interaction Design and Information Architecture Design while she started working in UX. She wants to gain expertise in those areas in the next 5 years. She also likes learning about people and their cultures. She loves watching anthropology documentaries, reading about food and culture around the world. She continued with her UX projects and finished them to make a portfolio that you are on now.</p>
+            <p>All this time, she had to have awkward conversations with her family and friends, who couldn’t approve of her career choice. Now, she is actively applying for jobs on LinkedIn, Indeed and other job portals. She is aiming for an internship or an entry-level job as a user experience designer/researcher. She wants to work in a challenging, fun and professional atmosphere. 
+            </p>
+            <i> In a nutshell</i>
+            <img class="img-fluid" src="img/portfolio/personanew.png"/>
+            <p><i> Do I seem to be a great fit for your team? Contact me at</i> <a href="mailto://chandrikabolla999@gmail.com">chandrikabolla999@gmail.com</a></p>
+        </div>
+        <div class="text-center">
+        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss text-center" href="#">
+                <i class="fa fa-close"></i>
+                Close</a>
+              </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal UX 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-ux1">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <img class="img-fluid img-responsive" src="img/portfolio/indeed-web-header.JPG"/>
+            <div class="col-lg-8 mx-auto">
+             <!-- <h2 class="text-secondary text-uppercase mb-0">Indeed.com Case Study</h2>-->
+              <p><br/><i> Indeed website Case study is my personal project after graduation. I used user research methods such as user inyerviews, user surveys, card sorting, competitor analysis, usability testing during this project.</i></p>
+              <hr class="star-dark mb-5">
+
+              
+              <h3>Project</h3>
+              <div class="text-left">
+              <p class="mb-1"><b>Design Challenges:</b> Consistency, Changes in design that can increase conversion rate, Smooth process flow for profile, resume edits, adding new features that differentiate the website from its competitors</p>
+              <p class="mb-1"><b>Role:</b> Designer and Researcher</p>
+              <p class="mb-1"><b>Timeline:</b> 10 days</p>
+              </div>
+              <h3>Process</h3>
+              <div class="text-left">
+              <p>
+                <b><u> Discovery</u></b>
+              </p>
+             <!-- <p><b>Identify the goals:</b> I made a thorough research on the website: the goals and features the website provides. I started analyzing its process flow, noted some pain points I observed and quickly moved to knowing how other users use, like and feel about the site.</p>-->
+              <p><b>User Research Interviews:</b> I began my process by conducting ethnographic field study followed by user research interviews (semi-structured) with my classmates and recently graduated friends (aged 20-27), who were looking for jobs online. I concluded the research after discovering pain points with the user flow and application process on the website. An overview of their responses is like this:</p>
+              <p><b><i>“indeed.com is like Google for the job search. It is simple by looks and good for basic search results but it can be better.”</i></b></p>
+              <img class="img-fluid" src="img/portfolio/indeed-website/affinitymap.jpg" data-action="zoom"/>
+              <p><br/><b>Survey:</b> Although user research interviews gave me a detailed and quality research output, I conducted a user research survey to analyze and validate my research quantitatively. Using OptimalSurvey, I conducted <a href="https://rsb45d5r.optimalworkshop.com/questions/850213e3" class="dotted" target="_blank">survey</a> with 30 users by asking questions about their experience with the website, questions related to features on the webiste.</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="img-fluid" src="img/portfolio/indeed-website/indeed-jobfiltersurvey.png" data-action="zoom"/>
+                </div>
+                <div class="col-md-6">
+                  <img class="img-fluid" src="img/portfolio/indeed-website/lookingforjobs-indeed.png" data-action="zoom"/>
+                </div>
+              </div>
+              <p> I validated my qualitative data with quantitative data without relying on just either one of them. The survey data helped me in reorganizing the filters for jobsearch on the website. On the whole, the research from discovery phase gave me ideas, inspiration for new features for the site.</p>
+             <!-- <p><b>Ethnographic field studies:</b> Although user research interviews and survey gave a great research output to start my next phases of design and research, I conducted ethnographic field studies with users to observe how their job process is, how they feel during the process and other behaviors, interests. This research methodology helped me in making detailed user personas.</p>-->
+             <!-- <p><b>In-Person Usability Testing:</b> I conducted in-person usability testing by preparing simple tasks using the existing website. This gave me an insight into the users’ process flows and their frustrations during the process.</p>-->
+              <br/>
+              <p>
+                <b><u> Interpretation</u></b>
+              </p>
+              <p><b>Competitor Analysis: </b> I started with identifying the competitors in the product landscape. Then, I conducted competitor research and analysis with the website's major competitors of the website, Linkedin.com, monster.com, glassdoor.com, careerbuilder.com. My research and analysis was focused on ux workflow for applying job on board <i>aka</i> easy apply jobs, user onboarding process, product features. I used intelligence tools such as SimilarWeb.com and Google Analytics to analyze user demographics, social media traffic, languages of the compeitor websites.</p>
+              <p><b>SWOT Analysis:</b> Regardless of its competitors, I analysed the strengths, weaknesses, opportunities and threats of the website of its own.
+                <div class="container">
+                  <img class="img-fluid" src="img/portfolio/indeed-website/swot.png" data-action="zoom"/>
+                </div>              
+              </p>
+              <br/>
+
+              <p>
+                <b><u>Ideation</u></b>
+              </p>
+
+
+               <p> From research, analysis and brainstorming, I decided to add the below features in the new design.
+                <b>Baseline features:</b>
+                <ul>
+                  <li>Job application filters according to user needs </li>
+                  <li>Uploading files from device and drive in Messages, resume</li>
+                  <li>My jobs, my resume everything of users into a consistent My account page</li>
+                  <li>Separating contexts for different types of users</li>
+                </ul>
+                <b>Performance features:</b>
+                <ul>
+                  <li>Uploading different resumes on indeed</li>
+                  <li>Steps in easy apply job applications</li>
+                  <li>Creating alerts for recent job searches</li>
+                  <li>Managing recent job searches</li>
+                  <li>Advanced search in the home page</li>
+                </ul>
+                <b>Delighters:</b>
+                <ul>
+                  <li>Careers feature</li>
+                  <li>Job Fairs feature</li>
+                </ul>                
+              </p>
+             <!-- <p><b>Card Sorting:</b> In the initial stage of ideation phase, I conducted open sorting with my users (10 of them) in person and using OptimalSort tool. The research methodology was focused on main navigation and information elements of the website. The standardization matrix and similarity matrix from the research analysis showed that 70% of the users’ ideas match the new business model.</p>-->
+              <p><b>Information Architecture:</b>  By following IA design model from the book "Information Architecture" by Louis Rosenfeld, my research for building IA strategy included Background research, Heuristic Evaluation, Benchmarking, use cases, Personas, User Interviews, card sorting, User Testing. I improved labeling, navigation system in the information architecture of the website.</p>
+              <img class="img-fluid" src="img/portfolio/indeed-website/ia_indeedwebsite.jpg" data-action="zoom"/>
+              <p><b>Closed Card Sorting:</b> Unlike the initial card sorting(open), once the information architecture strategy is designed, I conducted <a href="https://rsb45d5r.optimalworkshop.com/optimalsort/oq4a201h">closed card sorting</a> to test the design of information architecture with 10 of my users on OptimalSort.</p>
+             <!-- <p><b>User Flows: </b>The website is missing internal consistency that is making the user flow difficult to understand and checkout from one page to another. Keeping the main elements and functionalities same, I modified the user flow making it easier for the user to find out where he is and where he can go from there.</p>-->
+              <p><br/><b>User Personas</b> From the research phase, I performed user segmentation based on the user's needs. I created personas for each of the user segment of the product.</p>
+              <div class="row">
+                <div class="col-md-4">
+                  <img class="img-fluid" src="img/portfolio/indeed-website/davidpersona.png" data-action="zoom"/>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-fluid" src="img/portfolio/indeed-website/nadiyapersona.png" data-action="zoom"/>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-fluid" src="img/portfolio/indeed-website/jamespersona.png" data-action="zoom"/>
+                </div>
+              </div>
+
+              <br/>
+              <p>
+                <b><u>Prototyping</u></b>
+              </p>
+               <p><b>Paper prototyping:</b> I started prototyping on paper from the initial stage of ideation phase while brainstorming. A final paper prototype that can be referred during the later stages was designed after designing the information architecture.</p>
+               <img class="img-fluid" src="img/portfolio/indeed-website/indeed_web_paperproto.jpg"/>
+              <p><br/><b>Wireframes:</b> During the design stage of information architecture, I designed low-fidelity wireframes to show the information architecture of the website. I later used these templates to design high-fidelity prototypes for user testing. I made changes in the design accummulating new basic, performance features and delighters. </p>
+              <div class="row">
+                <div class="col-md-4">
+                  <img class="img-fluid" src="img/portfolio/indeed-website/jobsearch_wireframe.png" data-action="zoom"/>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-fluid" src="img/portfolio/indeed-website/searchresults_wireframe.png" data-action="zoom"/>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-fluid" src="img/portfolio/indeed-website/profile_wireframe.png" data-action="zoom"/>
+                </div>
+              </div>
+              <p>
+                <br/>
+                <b>Interactive Hi-fidelity Prototypes: </b>I designed high fidelity prototypes using proto.io. I reused the low-fidelity wireframes from the previous phase for prototyping. Keeping the color palette of the original website same, I optimized the user flows and added new features.
+              </p>
+              <div class="row">
+                <div class="col-md-4">
+              <img class="img-fluid" src="img/portfolio/indeed-website/notloggedin.png" data-action="zoom"/>
+               </div>
+             <div class="col-md-4">
+              <img class="img-fluid" src="img/portfolio/indeed-website/searchresults.png" data-action="zoom"/>
+              </div>
+              <div class="col-md-4">
+              <img class="img-fluid" src="img/portfolio/indeed-website/jobfairs.png" data-action="zoom"/>
+            </div>
+
+
+          </div>
+
+              <br/>
+              <p>
+                <b><u> Testing</u></b>
+              </p>
+              <p> 
+                <b>Usability Testing</b> By recruiting 6 participants 3 from each user segment of the product, I conducted in-person usability testing using scenarios and tasks.
+              </p>
+              <p><b>Feedback</b>
+                The feedback was positive.
+                <ul>
+                  <li>The users felt the new job application(steps) process is useful </li>
+                  <li>The filters of the job search are easy to use at hand</li>
+                  <li>The users felt confident about job search process on the website</li>
+                </ul>
+              </p>
+              <!--<p><b>Kano Model</b>
+                By using Kano Model, I evaluated the features of the redesigned website by asking the users for feedback after usability testing.</p>-->
+
+              </div>
+
+              <h3>Technology</h3><p>Proto.io,OptimalWorkshop for survey and card-sorting </p>
+              <div class="text-left">
+              <p><b>Challenges &amp; Lessons Learned</b>
+                <ul>
+                  <li>Splitting the context of the webiste for different kinds of audiences (Jobseekers,employers, jobfair hosts - a newly added feature) was initially challenging. But this strategy puts all the users at ease while working on indeed.</li>
+                  <li>It was difficult to gather what all the website was offering because the site has inconsistent navigation system. Then, I understood how users feel lost while browsing on the site.
+                  </li>
+                  <li> I spent my intial days of the project on user research to gather more user insights than required. I should have spent less and concentrated more on other research methods also.
+                  </li>
+                </ul>
+              </p>
+            </div>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Portfolio Modal UX 2 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-ux2">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <img class="img-fluid img-responsive" src="img/portfolio/indeed-mobile-header.JPG"/>
+            <div class="col-lg-8 mx-auto">
+             <!-- <h2 class="text-secondary text-uppercase mb-0">Indeed.com Case Study</h2>-->
+                            <p><br/><i> Redesigning Indeed's mobile app was my personal project after redesigning the website. From the analysis during the website redesign, I found that Indeed's users often search for jobs using mobile web but do not download or use the mobile app on their mobiles. So, I conducted a user research, studied on consumer forums for the app's reviews and decided to redesign the app by removing the pain points of the app. </i></p>
+                            <hr class="star-dark mb-5">
+
+              
+              <h3>Project</h3>
+              <div class="text-left">
+              <p class="mb-1"><b>Goal:</b>Refine user flow, preventing drop-offs in the job application process, enhance design and improve consistency within the app. </p>
+              <p class="mb-1"><b>Role:</b> Designer and Researcher</p>
+              <p class="mb-1"><b>Timeline:</b> 4 days</p>
+              </div>
+              <h3>Process</h3>
+              <div class="text-left">
+              <p>
+                <b><u> Discovering:</u></b>
+              </p>
+              <p><b>Identify the goals:</b> The current mobile app promises to offer job search, save jobs, easily apply from phone with user’s indeed resume, discover companies. But, the app does not allow users to direct access to all of these. The user flow of the app is complex and confusing and doesn't follow the ios app interface guidelines. </p>
+              <p><b>User Research Interviews:</b> I conducted user research interviews (structured and semi-structured) with my classmates and newly graduated friends (aged 20-27), who were looking for jobs online. I discovered a few other pain points with the app. </p><br/>
+              <i> Sample of responses:</i>
+              <img class="img-fluid" src="img/portfolio/indeed_mobile/indeedmobile_responses.jpg" data-action="zoom"/>
+              <p><br/><b>Analyzing the current user flow</b><p>
+
+                <img class="img-fluid" src="img/portfolio/indeed_mobile/current_userflow_indeed_mobile.jpg" data-action="zoom"/>
+
+              <br/>
+              <p>
+                <b><u>Defining</u></b>
+              </p>
+             <!-- <p><b>Closed Card Sorting:</b> Unlike the initial card sorting(open), once the information architecture strategy is designed, I conducted closed card sorting to test the design of information architecture with 10 of my users on OptimalSort.</p>-->
+              <p><b>Mobile App Architecture:</b> I designed the mobile app information architecture by conducting closed card sorting with the users. I added a new feature into the app, i.e., job fairs from my prvious project on redesigning the indeed website.</p>
+              <img class="img-fluid" src="img/portfolio/indeed_mobile/indeed_mobilearch.jpg" data-action="zoom"/>
+              <p><br/><b>Paper prototyping:</b> While brainstorming I put out my ideas on paper by creating paper prototypes.</p>
+              <img class="img-fluid" src="img/portfolio/indeed_mobile/indeed_mobile_paperproto.jpg"/>
+              <p><br/><b>Storyboarding</b> I sketched David's (primary persona) story with a scenario in my notebook. Doing it by myself and reading the story during my design breaks, helped me empathize more with the user.</p>
+              <img class="img-fluid" src="img/portfolio/indeed_mobile/indeed_mobile_storyboard.jpg" data-action="zoom"/>
+              <p><br/><b>Redesigned mobile app structure</b>The redesigned app follows ios app interface guidelines.</p>
+                <img class="img-fluid" src="img/portfolio/indeed_mobile/redesignuserflow.jpg" data-action="zoom"/>
+              <p><br/><b> Refined User Flows:</b> I focused on user flows for the tasks like applying for a job, searching for companies, managing messages.</p>
+              <img src="img/portfolio/indeed_mobile/userflow_jobapplication_mobile1.jpg" class="img-fluid" data-action="zoom"/>
+             <!-- <p><b>Wireframes:</b> </p>-->
+
+              <br/>
+              <p>
+                <b><u>Designing</u></b>
+              </p>
+              <p>
+                <b><br/>Interactive Hi-fidelity Prototypes: </b>I designed high fidelity prototypes using proto.io. I reused the low-fidelity wireframes from the previous phase for prototyping. Keeping the color palette of the original application same, I optimized the user flows and added new features.
+              </p>
+              <img class="img-fluid" src="img/portfolio/indeed_mobile/indeedmobile_proto1.jpg"/>
+              <img class="img-fluid" src="img/portfolio/indeed_mobile/indeedmobile_proto2.jpg"/>
+
+              <br/>
+              <p>
+                <b><u>Validating</u></b>
+              </p>
+              <p> 
+                <b>Usability Testing</b> I recruited 6 participants 2 from each user segment of the product focus and conducted in-person usability testing using scenarios and tasks.
+              </p>
+              <p><b>Feedback</b>
+                The feedback was positive.
+                <ul>
+                  <li>The users felt the new job application(step) process is useful </li>
+                  <li>The filters of the job search are easy to use at hand</li>
+                  <li>The users felt confident about job search process on the website</li>
+                </ul>
+              </p>
+
+              </div>
+
+              <h3>Technology</h3><p>Proto.io,OptimalWorkshop for survey and card-sorting </p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Portfolio Modal UX 3 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-ux3">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <img class="img-fluid img-responsive" src="img/portfolio/pet-header.JPG"/>
+            <div class="col-lg-8 mx-auto">
+             <!-- <h2 class="text-secondary text-uppercase mb-0">Digitaliaing traditional Graduate College Petition Application of NU</h2>-->
+              
+              <p><br/><i>This is a responsive web application that helps students to submit course petitions online and get approved by grad advisors and grad schools online and helps to receive email notifications every time the status of the application changes.</i></p>
+              <hr class="star-dark mb-5">
+              <h3>Project</h3>
+              <div class="text-left">
+              <p><b>Project team:</b> Chandrika Bolla</p>
+              <p><b> Project Sponsors(would be):</b> Northeastern University Grad School</p>
+              <p><b>Product Customers:</b> Northeastern University students and staff</p>
+              <p><b>Problem?! </b> Although I had never had firsthand experience in filing a petition for my courses here at Northeastern University, I heard a lot of stories about it from my classmates. There were at least 20 of my classmates who file these petitions every semester. Every time they file a petition it takes two or three long weeks for the final status to be checked. The students feel anxious whether it will be approved or not and they must often go to the grad school desk to inquire about the application. And this is tiring for the front desk to go through a ton of petition forms received to inform the student.</p>
+              <p><b> Solution:</b> This application which allows the student to submit the application for petition online using his husky credentials, and check the updated status of the application without going to the front desk. This application helps the university to track the applications and the petition form data can be preserved online for any analysis purpose in the future.
+              This application does not promise that the whole 2 or 3 long week process can be done in minutes. But, saves energy, time in the form of timely notifications, as the process is online.</p>
+
+              </div>
+              <h3>Process</h3>
+              <div class="text-left">
+              <p>
+                <b><u> Discovering:</u></b>
+              </p>
+
+              <p><b>User research Interviews:</b> Having 5 students who had already faced the problem during the last 2 semesters, was a huge plus for my research. I interviewed them asking about the current traditional process, the pain points. </p>
+              <p><b>Researching the product line:</b> Being a student of the institution helped me get access to different products of the university that the students use on a daily and regular basis. I made sure the screens look familiar so that it is easy for them to predict and understand. Thus, I was able to achieve external consistency.</p>
+              <br/>
+
+              <p><b><u>Ideating</u></b>After collecting the user insights, I designed user flows, use case and class digrams as I was going to build REST API in the back end.</p>
+              
+              <p><b>Use case diagram</b></p>
+              <div class="row container">
+                <div class="col-md-6 mx-auto">
+              <img class="img-fluid" src="img/portfolio/petapp/petapp_usecase.png" data-action="zoom"/>
+              </div>
+              </div>
+              <p><b>Class Diagram</b></p>
+              <div class="row container">
+                <div class="col-md-6 mx-auto">
+              <img class="img-fluid" src="img/portfolio/petapp/petapp_classdia.png" data-action="zoom"/>
+               </div>
+                </div>
+              <p><b> Process Flows</b></p>
+              <div class="row container">
+                <div class="col-md-6 mx-auto">
+              <img class="img-fluid" src="img/portfolio/petapp/petapp_processflow.jpg" data-action="zoom"/>
+              </div>
+              </div>
+              <p><b>User Personas:</b></p>
+              <p><b> Paper Prototyping</b></p>
+              <img class="img-fluid" src="img/portfolio/petapp/petapp_paperproto.jpg" data-action="zoom"/>
+              <br/>
+
+              <p><b><u>Prototyping</u></b>
+              <p><b> Wireframes </b></p>    
+              I designed Interactive wireframes using moqups.com. <a href="https://app.moqups.com/chandrika_bolla/bvqydq4UU0/view/page/aad9c3c8b?ui=0">View Design </a>      
+
+              
+
+              </div>
+
+              <h3>Technology</h3><p>Moqups, Draw.io</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Portfolio Modal UX 4 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-ux4">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <img class="img-fluid img-responsive" src="img/portfolio/fst-header.JPG"/>
+            <div class="col-lg-8 mx-auto">
+            <!--  <h2 class="text-secondary  mb-0"> Q&amp;A, Blog website for Food Science &amp; Technology Students </h2>-->
+              
+              <p><br/><i>The FST website is a question and answer and blog website that allows FST students to ask questions and answer other's questions, write articles/posts on the blog after receiving certain number of votes on the website.</i></p>
+              <hr class="star-dark mb-5">
+              <h3>Project</h3>
+              <div class="text-left">
+             <p><b> Context:</b> The project was designed to present an entrepreneurial idea at the Food Technology Entrepreneurial Summit 2018 held in Vizag, India.</p>
+              <p><b>Problem:</b> Food Science and Technology(I will call it FST, in this report), being very less known field in education in India and due to lack of resources on web in its domain, its students face many hurdles - to follow their passion, to do their assignments in everyday academic life, to increase knowledge in the domain.</p>
+              <p><b>Goal: </b>The goal of this project is to deliver a medium-to-high fidelity wireframe that shows a clear way of solving the existing problem faced by FST students.</p>
+              <p><b>Role:</b> UX Designer, Researcher, Business Analyst</p>
+              <p><b>Timeline:</b> 2 weeks</p>
+              </div>
+              <h3>Process</h3>
+              <div class="text-left">
+              <p>
+                <b><u> Discovery:</u></b>
+              </p>
+              <p><b>User Research Interviews:</b> I started off with user research interviews with 10 students, who are potential users of the app. During these semi-structured interviews, I listened to their stories, learned about their current approach of solving the problem, the tools they were using. <br/>
+              Sample of responses:<br/>
+              <i>“Had I known this a little earlier when I got into this program, I would have switched to another one.”<br/>
+              “I often can’t find information that I want. I write down the little that I find. And then, I feel no confidence in me during my presentations.”<br/>
+              “We often waste time reading articles that contain more content from other domains and very less of ours.”<br/>
+              “I feel no confidence in getting a job because I don't know the current trends in the industry.”</i>
+              </p>
+              <p><b>Focus groups:</b> Using a screener, I filtered 10 participants out of 30 for the first focus group to discuss about the problem they are facing, how they are trying to solve the current problem and how they feel about the whole process. The second focus group consisted of 5 members from the previous 10 who were able to articulate the pain points of current method and were knowledgeable about the issue.
+              The focus group revealed the pain points of their information search, gave me insight about their attitudes, behavior.</p>
+              <p><b>Researching the domain:</b>  I researched the domain and asked the Food Science students about the field. This helped me understand in the first place that there are not so many resources to get information on this domain, the field’s work varies from country to country due to difference in food cultures. This helped me to make decisions to make it local to only one country, India. And, the languages the website must be built. Like these, the initial research helped me make other decisions about content of the product.</p>
+              <br/>
+              <p>
+                <b> <u>Interpreting</u></b>
+              </p>
+              <p><b>Competitor Analysis:</b>
+              I conducted competitor research and analysis with three of the similar products stackexchange.com, quora.com, reddit.com. My research and analysis included product landscape, user demographics, product features, social media presence, social media traffic, language and content using SEO tools such as SimilarWeb.com.</p>
+
+              <p><b>User Personas:</b>From the stories I have heard from users during the user interviews, I created personas based on their goals. I created one primary persona who would be an ambassedor of our solution and two other secondary personas who would need and use the app regularly.</p>
+              <img class="img-fluid" src="img/portfolio/foodscience/foodscience_personas.jpg" data-action="zoom"/>
+              <br/>
+              <p>
+                <b>Ideating</b>
+              </p>
+              <!--<p><b>Storyboarding:</b>I designed a storyboard for the primary user once after the basic use cases of the product are defined. This helped me not to lose track of the user story and motivated me, made me develop empathy towards the user.</p>-->
+              
+              <p><b>Card sorting:</b> I performed card sorting for two times. During the design of Information Architecture, I used open card sorting to know the user thought patterns while looking for information and <a href="https://rsb45d5r.optimalworkshop.com/optimalsort/88bn80qz">closed card sorting</a> after designing the IA to validate the IA design. Both the times, it was remote card sorting as the users were remote. I used optimalcardsort of oprtimalworkshop.com to make it work. The standardization matrix showed that 60-70% of the users’ sorting matched the IA designed. Making a little improvement in the IA after card sorting analysis, I moved on creating paper prototypes.</p>
+              <br/>
+              <p><b>Information Architecture:</b></p>
+              <div class="row">
+                <div class="col-md-6">
+              <img class="img-fluid" src="img/portfolio/foodscience/foodscience_ia1.jpg" data-action="zoom"/>
+            </div>
+            <div class="col-md-6">
+              <img class="img-fluid" src="img/portfolio/foodscience/foodscience_ia2.jpg" data-action="zoom"/>
+            </div>
+              </div>
+              <p><b>Paper Prototypes: </b></p>
+              <img class="img-fluid" src="img/portfolio/foodscience/foodscience_paperprototype.jpg"/>
+              <p><b>Wireframes:</b> I designed interactive wireframes after designing Information Architecture. I tested the design remotely with the users and iterated the design process by buidling high-fidelity prototypes after making a few changes.</p>
+              <img class="img-fluid" src="img/portfolio/foodscience/wireframe_fst.gif"/>
+              <br/>
+              <p>
+                <b><u>Prototyping</u></b>
+              </p>
+              <p><b>Prototypes:</b> I used proto.io to design the high-fidelity interactive prototypes.</p>
+              <div class="row">
+                <div class="col-md-4">
+                  <img class="img-fluid" src="img/portfolio/foodscience/home.png" data-action="zoom"/>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-fluid" src="img/portfolio/foodscience/question.png" data-action="zoom"/>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-fluid" src="img/portfolio/foodscience/blogpost.png" data-action="zoom"/>
+                </div>
+
+
+              </div>
+              <br/>
+              <p>
+                <b><u>Testing</u></b>
+              </p>
+              <p><b> Remote Moderated Usability Testing:</b>
+              I conducted remote usability testing as all of my users were remote. Some of the tasks in my usability testing include:
+              <ul>
+                <li>Log in or create account if you don't have one</li>
+                <li>Comment on a question that you are interested to learn more details on</li>
+                <li>Answer a question from Confectionary</li>
+                <li>Like and Comment on a blog post in Nutrition &amp; Dietics</li>
+                <li>Search for a job in your city</li>
+                <li>Search for a user and follow him</li>
+                Out of above all, initially the users took time for searching for a user task as in the navigation, it was labelled as network, which they thought it would be my network not all the users on the site. I changed it into "Users" before testing the other users and they were able to complete it.
+                <br/>I made such changes in colors and other elements while designing high-fidelity prototypes.
+              </ul>
+              </p>
+              
+              </div>
+
+              <h3>Technology</h3><p>Proto.io,OptimalWorkshop for survey and card-sorting, Google Hangouts,Skype for user interviews</p>
+              <div class="text-left">
+              <p>
+                <b>Challenges &amp; Lessons Learned</b>
+                <ul>
+                  <li>All the users and stakeholder team was remote and were on vacation for a week. I had to chose specific times to connect with them for user interviews.</li>
+                  <li>The potential users I tested and interviewed were not so tech-savvy. I chose the tools and medium that they are familiar with, to put them at ease and answer my questions.</li>
+                  <li>The stakeholder team was reluctant to the voting system on the website, later I was able to convince them by my competitor analysis and other insights from history of voting and competition.</li>
+                  <li>I experienced a true agile process, as the users' and business requirements were changing.</li>
+                </ul>
+              </p>
+            </div>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal UX 5 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-ux5">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <img class="img-fluid img-responsive" src="img/portfolio/vite-header.JPG"/>
+            <br/>
+            <div class="col-lg-10 mx-auto">
+
+           <!--   <h2 class="text-secondary  mb-0"> Vite - Business Analysis Project </h2>-->
+                            <p><br/><i>Vite is a visual search engine app that allows its basic users to search for a product at nearby stores and premium users to search for the same product online, by simply taking a picture of the product with the app. 
+              Through Vite app, the company wants to improve its product image database of products sold and bought.</i></p>
+              
+              <hr class="star-dark mb-5">
+              <br/>
+              <h3>Project</h3>
+              <div class="text-left">
+             <p><b> Problem:</b>People spend a lot of time looking for the exact product they see with someone or
+              somewhere around them. The trouble of getting the right product with the best deal is
+              another addon to the amount of precious time people spend. There are applications for
+              one to check the prices online on all the websites but what about local stores? How if we
+              can get a product at a cheaper price than the online sites. In fact, there is no dedicated
+              application for one to recognize the exact product.</p>
+              <p><b>Solution:</b>
+              Our app, Vité is focused on helping individual not only get the best deals from the web
+              and stores near you but also recognizes the exact brand with details of the product when
+              a user scans any product using their phone camera.</p>
+
+              <p><b>Role:</b> UX Designer, Researcher, Business Analyst in a team of 6</p>
+              <p><b>Timeline:</b> 2 weeks</p>
+              </div>
+              <h3>Process</h3>
+              <div class="text-left">
+              <p>
+                <b><u> Discovering:</u></b>
+              </p>
+              <p><b>
+              Requirements Gathering:</b> We gathered requirements from our stakeholder team in our class and interviewed 10 of my classmates and friends who are potential users of the app. </p>
+              <p><b>Competitor Analysis:</b> We analyzed potential competitors of the app. The analysis included product landscape, features, languages, geography.</p>
+              <img class="img-fluid" src="img/portfolio/vite/competitoranalysis_vite.png" data-action="zoom"/>
+              <p><br/><b>Formulating Business Goals and User Goals:</b> From the crude business goals and user needs of the app, we refined and documented a business case with.</p>
+              <img class="img-fluid" src="img/portfolio/vite/business_requirements.png" data-action="zoom"/>
+              <img class="img-fluid" src="img/portfolio/vite/user_requirements.png" data-action="zoom"/>
+              <br/>
+              <p>
+                <b> <u>Defining</u></b>
+              </p>
+              <p> As a part of this Business Analysis Course project, we created use case, class diagrams and Business Process Models for the application.
+              <p><b>Use cases:</b></p>
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+              <img class="img-fluid" src="img/portfolio/vite/usecases.jpg" data-action="zoom"/>
+              </div>
+              </div>
+              
+
+              <p><br/><b>Use case Diagram:</b></p>
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+              <img class="img-fluid" src="img/portfolio/vite/usecasediagramsmall.jpg" data-action="zoom"/>
+            </div>
+          </div>
+           
+
+              <p><br/><b>Class Diagram:</b></p>
+               <div class="row">
+                <div class="col-md-10 mx-auto">
+              <img class="img-fluid" src="img/portfolio/vite/classdiagram_vite.jpg" data-action="zoom"/>
+            </div>
+          </div>
+          
+              <p><br/><b>BPMN:</b></p>
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+
+              <img class="img-fluid" src="img/portfolio/vite/bpmndiagram.png" data-action="zoom"/>
+              </div>
+              </div>
+              <p><br/><b>Personas:</b>We created two personas based on the goals of the users. This helped us to empathize with them and design for them. </p>
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+
+              <img class="img-fluid" src="img/portfolio/vite/vite_personas.jpg" data-action="zoom"/>
+            </div>
+          </div>
+              <p><br/><b>Storyboarding:</b> Based on various scenarios the user would need the app, I created storyboarding to show how the problem arises in the persona's life, and how he feels when he doesn't use and does use the app.</p>
+              <div class="row">
+                <div class="col-md-6">
+              <img class="img-fluid" src="img/portfolio/vite/storyboard1.png" data-action="zoom"/>
+            </div>
+            <div class="col-md-6">
+              <img class="img-fluid" src="img/portfolio/vite/storyboard2.png" data-action="zoom"/>
+            </div>
+          </div>
+              <p><br/><b> Application Architecture:</b> We built information architecture by analysing the competitor's information architecture and by conducting card sorting with our classmates.</p>
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+
+              <img class="img-fluid" src="img/portfolio/vite/wnd.jpg" data-action="zoom"/>
+            </div>
+          </div>
+              
+              <p><br/><b>Paper Prototypes:</b> I used paper prototypes to discuss my ideas since brainstorming phase of the process. As the team was remote, I later used moqups.com to share and collaborate with the members.</p>
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+
+              <img class="img-fluid" src="img/portfolio/vite/vite_paperproto.jpg" data-action="zoom"/>
+            </div>
+              <br/>
+              <p><br/><b>Interface Process Flow: </b> Before moving into prototyping phase, we made the user flows clear by drawing the process flows for each task that the user would want to accomplish using the app. We used moqups and draw.io to draw the process flows.</p>
+             <!-- <img class="img-fluid" src="img/portfolio/vite/processflow_signupflow.jpg" data-action="zoom"/>-->
+              <img class="img-fluid" src="img/portfolio/vite/basicuser.jpg" data-action="zoom"/>
+              <p>
+                <b><u>Prototyping</u></b>
+              </p>
+              <p><br/><b>Prototypes:</b> As a designer and researcher in the team, I designed interactive high-fidelity prototypes using Sketch. </p>
+              <img class="img-fluid" src="img/portfolio/vite/screensjpg.jpg"/>
+              <img class="img-fluid" src="img/portfolio/vite/screensjpg2.jpg"/>
+              <br/>
+              <p>
+                <b><u>Testing</u></b>
+              </p>
+              <p><b> In-Person Usability Testing:</b>
+                We conducted usability testing with 6 of our classmates and friends to test the app for basic tasks by explaining them the scenarios of those tasks.
+                <ul>
+                  <li>Basic user:Search for this Product in stores nearby using the app </li>
+                      All 6(6) users were able to complete the task 
+                  <li>Premium user: Search for this Product in online stores and look for better deal out of many</li>
+                      5(6) users were able to complete the task
+                  <li>Basic user:Sign up for premium </li>
+                      3(6) users were able to complete the task. Others took their time to find the option.
+                  <li>Basic user: Search for online store results after searching for product. </li>
+                      6(6) users were able to complete the task of purchasing premium from here.
+                  <li>Mark a store from the results as favorite</li>
+                      5(6) users were able to compelte this task
+                </ul>
+              </p>
+
+              
+              </div>
+            </div>
+              <h3>Technology</h3><p>Proto.io,OptimalWorkshop for survey and card-sorting </p>
+              <div class="text-left">
+              <p><b>Challenges &amp; Lessons Learned:</b>
+                <ul>
+                  <li>Considering the cost of the algorithm used for visual search, the product does not give free access or free trials for its users. I designed the login walls that would help to know the product, how to use the app before they sign up. </li>
+                  <li> As it was an academic course project, we had 10 days to finish from low-fidelity to high-fidelity and deliver the prototype. It was challenging for me to learn a new tool, Sketch and design the whole app in short period of time.</li>
+                </ul>
+              </p>
+            </div>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal UX 6 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-ux6">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <img class="img-fluid img-responsive" src="img/portfolio/cavas-web-header.JPG"/>
+            <div class="col-lg-10 mx-auto">
+            <!--  <h2 class="text-secondary text-uppercase mb-0">Cavas Health Record System - User Experience</h2>-->
+              <br/>
+              <p><br/><i>CAVAS is a global patient health record system that allows hospitals to digitally store patient medical data and patients to book appointments, access their diagnosis, medical information using their password protected accounts.</i></p>
+              <hr class="star-dark mb-5">
+            <h3>Project</h3>
+            <div class="text-left">
+              <p class="mb-1"> <b>Goal:</b> Build a user friendly patient health record system application for web, mobile <br/></p>
+              <p class="mb-1"><b>My Role:</b> Brainstorming, user research, prototyping, coordinating card sorting and usability testing as a Designer &amp; Researcher in a team of 5 others </p>
+              <p class="mb-1"><b>Timeline:</b> 10 days</p>
+              <p class="mb-1"><b>Deliverables:</b> Product Strategy, Interactive prototype of the product for desktop, mobile, android watch.</p>
+            </div>
+            <h3>Process</h3>
+            <div class="text-left">
+              
+              <p><b>Design Approach:</b> We followed 5 planes approach from the book “The Elements of User Experience” by Jessee James Garrett.</p>
+              <div class="row">
+                <div class="col-md-4 mx-auto">
+            <img class="img-fluid" src="img/portfolio/cavas/elements.png" alt="The Elements of User Experience" data-action="zoom"/>
+              </div>
+                </div>
+              <p><b>Strategy Plane:</b> During this first phase of the process, we defined what we want to get out of this product, what do our users want to get out of it. We documented Business Goals, Success metrics, User needs. </p>
+              <img class="img-fluid" src="img/portfolio/cavas/goals.png" data-action="zoom"/>
+              
+              <p><br/><b>Scope Plane:</b> During this phase, we built our scope by clearly defining what we are building and what we are not building. This helped us not to deviate from the goals defined in the previous phase. We documented Functional Requirements, Content requirements and prioritized them. </p>
+              <img src="img-fluid" src="img/portfolio/cavas/requirements.png" data-action="zoom"/>
+              <br/>
+             <p> We used user research interviews for qualitative data and we segmented users based on their goals, usage life cycle and demographics. We created personas from the stories we heard from the users.
+              </p>
+              <div class="container">
+              <p><i>Personas</i></p>
+              <div class="row">
+                <div class="col-md-6">
+              <img class="img-fluid" src="img/portfolio/cavas/dharanpersona.png" data-action="zoom">
+            </div>
+            <div class="col-md-6">
+              <img class="img-fluid" src="img/portfolio/cavas/tompersona.png" data-action="zoom">
+            </div>
+          </div>
+        </div>
+              <p><b>Structure Plane:</b> We used card sorting method to get user insights and their sorting patterns to design Information Architecture of the app.</p>
+             <!-- Pic: card sorting, information architecture, user flow-->
+             <div class="container">
+             <p><i>Open Card Sorting</i></p>
+             <div class="row mx-auto">
+              <div class="col-md-2">
+              <img class="img-fluid" src="img/portfolio/cavas/cardsorting/1.jpg" data-action="zoom"/>
+            </div>
+            <div class="col-md-2">
+              <img class="img-fluid" src="img/portfolio/cavas/cardsorting/2.jpg" data-action="zoom"/>
+            </div>
+            <div class="col-md-2">
+              <img class="img-fluid" src="img/portfolio/cavas/cardsorting/3.jpg" data-action="zoom"/>
+            </div>
+            <div class="col-md-2">
+              <img class="img-fluid" src="img/portfolio/cavas/cardsorting/4.jpg" data-action="zoom"/>
+            </div>
+            <div class="col-md-2">
+              <img class="img-fluid" src="img/portfolio/cavas/cardsorting/5.jpg" data-action="zoom"/>
+            </div>
+            </div>
+            </div>
+            <div class="container">
+              <p><i>Information Architecture</i></p>
+              <img class="img-fluid" src="img/portfolio/cavas/infoarch.jpg" data-action="zoom"/><p><br/></p>
+            </div>
+            <div class="container">
+              <p><i><br/>User work flow</i></p>
+              <img class="img-fluid" src="img/portfolio/cavas/cavas-userflow.jpg" data-action="zoom"/><p><br/></p>
+            </div>
+              
+              <p><b>Skeleton Plane: </b>Card sorting from the previous phase was important to design meaningful navigation and information design for the app. We built sitemap and index. We used global, local and contextual navigation systems for navigation design.</p>
+              <!--Pic: paper prototypes, Moqups, Story boarding-->
+              <div class="container">
+              <i><br/>Paper Prototypes</i>
+              <img class="img-fluid" src="img/portfolio/cavas/paperprototype.jpg" data-action="zoom"/>
+            </div>
+              
+              <div class="container">
+              <i><br/>Storyboarding</i>
+              <img class="img-fluid" src="img/portfolio/cavas/storyboard.jpg" data-action="zoom"/>
+            </div>
+              
+              <p><b>Surface Plane: </b>We designed the app for three of the five human senses (vision, hearing, touch). We chose the contrast (bright and muted) colors into our palette for easy identity and differentiation of important elements on the app. We achieved uniformity in sizing of the buttons, navbar items, icons.
+              Deliverables: high fidelity interactive prototypes</p>
+              <img class="img-fluid" src="img/portfolio/cavas/screen1.jpg" data-action="zoom"/>
+              <br/>
+              <img class="img-fluid" src="img/portfolio/cavas/screen2.jpg" data-action="zoom"/>
+
+              <br/>
+              <p><b>UX Research methods for after execution of the app: </b>Email surveys, true intent studies, customer feedback</p>
+              <img class="img-fluid" src="img/portfolio/cavas/otheruxmethods.jpg" data-action="zoom"/>
+
+             <!-- <img class="img-fluid mb-5" src="img/portfolio/cavas/home.png" alt="Home Screen of CAVAS application">
+
+              <img class="img-fluid mb-5" src="img/portfolio/cavas/patientdashboard.png" alt="patient Screen of CAVAS application">
+
+              <img class="img-fluid mb-5" src="img/portfolio/cavas/patientreport.png" alt="Patient report of CAVAS application">
+
+              <img class="img-fluid mb-5" src="img/portfolio/cavas/labassistant.png" alt="Lab Assistant Screen of CAVAS application">
+
+              <img class="img-fluid mb-5" src="img/portfolio/cavas/doctor.png" alt="Home Screen of CAVAS application">-->
+              </div>
+
+              <h3>Methodologies implemented for UX Research</h3> <p>User Research interview template, wireframes, prototype screens, usability task scenarios, user tasks, usability test script</p>
+
+              <h3>Technology</h3><p>Axure RP, SurveyMonkey, Moqups.com</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
@@ -612,6 +1594,20 @@ drift.SNIPPET_VERSION = '0.3.1';
 drift.load('776rmkir9f77');
 </script>
 <!-- End of Async Drift Code -->
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myemail");
+  copyText.select();
+  document.execCommand("copy");
+  document.getElementById("feedbackclip").style.visibility= "visible";
+  setTimeout(function () {
+        document.getElementById("feedbackclip").style.visibility= "hidden";
+    }, 10000);
+  
+  alert("Copied the text: " + copyText.value);
+  navigator.clipboard.writeText(copyText.value);
+}
+</script>
 
   </body>
 
